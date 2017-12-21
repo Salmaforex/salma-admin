@@ -40,7 +40,7 @@
 
                     <input type="text" name="example-input1-group2" class="form-control" placeholder="Search">
                     <span class="input-group-btn">
-                    <button type="button" class="btn  btn-default"  data-target="#search_form" data-toggle="collapse" aria-label="Close" aria-expanded="true"><i class="zmdi zmdi-search"></i></button>
+                        <button type="button" class="btn  btn-default"  data-target="#search_form" data-toggle="collapse" aria-label="Close" aria-expanded="true"><i class="zmdi zmdi-search"></i></button>
                     </span>
 
                     <!-- end input-group -->
@@ -180,23 +180,23 @@
                                     <hr class="light-grey-hr ma-0"/>
                                     <div class="product-carousel owl-carousel owl-theme text-center">
                                         <a href="#">
-                                            <img src="<?=base_url();?>assets/dist/img/chair.jpg" alt="chair">
+                                            <img src="<?= base_url(); ?>assets/dist/img/chair.jpg" alt="chair">
                                             <span>Circle chair</span>
                                         </a>
                                         <a href="#">
-                                            <img src="<?=base_url();?>assets/dist/img/chair2.jpg" alt="chair">
+                                            <img src="<?= base_url(); ?>assets/dist/img/chair2.jpg" alt="chair">
                                             <span>square chair</span>
                                         </a>
                                         <a href="#">
-                                            <img src="<?=base_url();?>assets/dist/img/chair3.jpg" alt="chair">
+                                            <img src="<?= base_url(); ?>assets/dist/img/chair3.jpg" alt="chair">
                                             <span>semi circle chair</span>
                                         </a>
                                         <a href="#">
-                                            <img src="<?=base_url();?>assets/dist/img/chair4.jpg" alt="chair">
+                                            <img src="<?= base_url(); ?>assets/dist/img/chair4.jpg" alt="chair">
                                             <span>wooden chair</span>
                                         </a>
                                         <a href="#">
-                                            <img src="<?=base_url();?>assets/dist/img/chair2.jpg" alt="chair">
+                                            <img src="<?= base_url(); ?>assets/dist/img/chair2.jpg" alt="chair">
                                             <span>square chair</span>
                                         </a>
                                     </div>
@@ -264,7 +264,7 @@
                                 <div class="sl-item">
                                     <a href="javascript:void(0)">
                                         <div class="sl-avatar">
-                                            <img class="img-responsive" src="<?=base_url();?>assets/dist/img/avatar.jpg" alt="avatar"/>
+                                            <img class="img-responsive" src="<?= base_url(); ?>assets/dist/img/avatar.jpg" alt="avatar"/>
                                         </div>
                                         <div class="sl-content">
                                             <span class="inline-block capitalize-font  pull-left truncate head-notifications">Sandy Doe</span>
@@ -300,16 +300,20 @@
                     </ul>
                 </li>
                 <li class="dropdown auth-drp">
-                    <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><?= $name; ?><img src="<?php echo base_url('assets/img/user.png'); ?>" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
+                    <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown">
+                        <?= $name; ?>
+                        <img src="<?php echo base_url('assets/img/user.png'); ?>" alt="user_auth" class="user-auth-img img-circle"/>
+                        <span class="user-online-status"></span>
+                    </a>
                     <ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
                         <li>
-                            <a href="profile.html"><i class="zmdi zmdi-account"></i><span>Profile</span></a>
+                            <a href="#"><i class="zmdi zmdi-account"></i><span>Profile</span></a>
                         </li>
                         <li>
                             <a href="#"><i class="zmdi zmdi-card"></i><span>my balance</span></a>
                         </li>
                         <li>
-                            <a href="inbox.html"><i class="zmdi zmdi-email"></i><span>Inbox</span></a>
+                            <a href="#"><i class="zmdi zmdi-email"></i><span>Inbox</span></a>
                         </li>
                         <li>
                             <a href="#"><i class="zmdi zmdi-settings"></i><span>Settings</span></a>
@@ -331,7 +335,7 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="admin/beranda/keluar"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
+                            <a href="<?= site_url('admin/beranda/keluar'); ?>"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
                         </li>
                     </ul>
                 </li>
