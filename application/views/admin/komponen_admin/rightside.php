@@ -36,7 +36,7 @@
                                                 <div class="chat-body">
                                                     <a href="javascript:void(0)">
                                                         <div class="chat-data">
-                                                            <img class="user-img img-circle"  src="dist/img/user.png" alt="user"/>
+                                                            <img class="user-img img-circle"  src="<?=base_url();?>assets/dist/img/user.png" alt="user"/>
                                                             <div class="user-data">
                                                                 <span class="name block capitalize-font">Clay Masse</span>
                                                                 <span class="time block truncate txt-grey">No one saves us but ourselves.</span>
@@ -47,7 +47,7 @@
                                                     </a>
                                                     <a href="javascript:void(0)">
                                                         <div class="chat-data">
-                                                            <img class="user-img img-circle"  src="dist/img/user1.png" alt="user"/>
+                                                            <img class="user-img img-circle"  src="<?=base_url();?>assets/dist/img/user1.png" alt="user"/>
                                                             <div class="user-data">
                                                                 <span class="name block capitalize-font">Evie Ono</span>
                                                                 <span class="time block truncate txt-grey">Unity is strength</span>
@@ -58,7 +58,7 @@
                                                     </a>
                                                     <a href="javascript:void(0)">
                                                         <div class="chat-data">
-                                                            <img class="user-img img-circle"  src="dist/img/user2.png" alt="user"/>
+                                                            <img class="user-img img-circle"  src="<?=base_url();?>assets/dist/img/user2.png" alt="user"/>
                                                             <div class="user-data">
                                                                 <span class="name block capitalize-font">Madalyn Rascon</span>
                                                                 <span class="time block truncate txt-grey">Respect yourself if you would have others respect you.</span>
@@ -69,7 +69,7 @@
                                                     </a>
                                                     <a href="javascript:void(0)">
                                                         <div class="chat-data">
-                                                            <img class="user-img img-circle"  src="dist/img/user3.png" alt="user"/>
+                                                            <img class="user-img img-circle"  src="<?=base_url();?>assets/dist/img/user3.png" alt="user"/>
                                                             <div class="user-data">
                                                                 <span class="name block capitalize-font">Mitsuko Heid</span>
                                                                 <span class="time block truncate txt-grey">I’m thankful.</span>
@@ -80,7 +80,7 @@
                                                     </a>
                                                     <a href="javascript:void(0)">
                                                         <div class="chat-data">
-                                                            <img class="user-img img-circle"  src="dist/img/user.png" alt="user"/>
+                                                            <img class="user-img img-circle"  src="<?=base_url();?>assets/dist/img/user.png" alt="user"/>
                                                             <div class="user-data">
                                                                 <span class="name block capitalize-font">Ezequiel Merideth</span>
                                                                 <span class="time block truncate txt-grey">Patience is bitter.</span>
@@ -91,7 +91,7 @@
                                                     </a>
                                                     <a href="javascript:void(0)">
                                                         <div class="chat-data">
-                                                            <img class="user-img img-circle"  src="dist/img/user1.png" alt="user"/>
+                                                            <img class="user-img img-circle"  src="<?=base_url();?>assets/dist/img/user1.png" alt="user"/>
                                                             <div class="user-data">
                                                                 <span class="name block capitalize-font">Jonnie Metoyer</span>
                                                                 <span class="time block truncate txt-grey">Genius is eternal patience.</span>
@@ -102,7 +102,7 @@
                                                     </a>
                                                     <a href="javascript:void(0)">
                                                         <div class="chat-data">
-                                                            <img class="user-img img-circle"  src="dist/img/user2.png" alt="user"/>
+                                                            <img class="user-img img-circle"  src="<?=base_url();?>assets/dist/img/user2.png" alt="user"/>
                                                             <div class="user-data">
                                                                 <span class="name block capitalize-font">Angelic Lauver</span>
                                                                 <span class="time block truncate txt-grey">Every burden is a blessing.</span>
@@ -113,7 +113,7 @@
                                                     </a>
                                                     <a href="javascript:void(0)">
                                                         <div class="chat-data">
-                                                            <img class="user-img img-circle"  src="dist/img/user3.png" alt="user"/>
+                                                            <img class="user-img img-circle"  src="<?=base_url();?>assets/dist/img/user3.png" alt="user"/>
                                                             <div class="user-data">
                                                                 <span class="name block capitalize-font">Priscila Shy</span>
                                                                 <span class="time block truncate txt-grey">Wise to resolve, and patient to perform.</span>
@@ -124,7 +124,7 @@
                                                     </a>
                                                     <a href="javascript:void(0)">
                                                         <div class="chat-data">
-                                                            <img class="user-img img-circle"  src="dist/img/user4.png" alt="user"/>
+                                                            <img class="user-img img-circle"  src="<?=base_url();?>assets/dist/img/user4.png" alt="user"/>
                                                             <div class="user-data">
                                                                 <span class="name block capitalize-font">Linda Stack</span>
                                                                 <span class="time block truncate txt-grey">Our patience will achieve more than our force.</span>
@@ -157,7 +157,7 @@
                                                 <ul class="nicescroll-bar pt-20">
                                                     <li class="friend">
                                                         <div class="friend-msg-wrap">
-                                                            <img class="user-img img-circle block pull-left"  src="dist/img/user.png" alt="user"/>
+                                                            <img class="user-img img-circle block pull-left"  src="<?=base_url();?>assets/dist/img/user.png" alt="user"/>
                                                             <div class="msg pull-left">
                                                                 <p>Hello Jason, how are you, it's been a long time since we last met?</p>
                                                                 <div class="msg-per-detail text-right">
@@ -189,7 +189,7 @@
                                                     </li>
                                                     <li class="friend">
                                                         <div class="friend-msg-wrap">
-                                                            <img class="user-img img-circle block pull-left"  src="dist/img/user.png" alt="user"/>
+                                                            <img class="user-img img-circle block pull-left"  src="<?=base_url();?>assets/dist/img/user.png" alt="user"/>
                                                             <div class="msg pull-left"> 
                                                                 <p>Not too bad.</p>
                                                                 <div class="msg-per-detail  text-right">
@@ -242,7 +242,7 @@
                                     <a href="javascript:void(0)">
                                         <div class="sl-item unread-message">
                                             <div class="sl-avatar avatar avatar-sm avatar-circle">
-                                                <img class="img-responsive img-circle" src="dist/img/user.png" alt="avatar"/>
+                                                <img class="img-responsive img-circle" src="<?=base_url();?>assets/dist/img/user.png" alt="avatar"/>
                                             </div>
                                             <div class="sl-content">
                                                 <span class="inline-block capitalize-font   pull-left message-per">Clay Masse</span>
@@ -256,7 +256,7 @@
                                     <a href="javascript:void(0)">
                                         <div class="sl-item">
                                             <div class="sl-avatar avatar avatar-sm avatar-circle">
-                                                <img class="img-responsive img-circle" src="dist/img/user1.png" alt="avatar"/>
+                                                <img class="img-responsive img-circle" src="<?=base_url();?>assets/dist/img/user1.png" alt="avatar"/>
                                             </div>
                                             <div class="sl-content">
                                                 <span class="inline-block capitalize-font   pull-left message-per">Evie Ono</span>
@@ -270,7 +270,7 @@
                                     <a href="javascript:void(0)">
                                         <div class="sl-item">
                                             <div class="sl-avatar avatar avatar-sm avatar-circle">
-                                                <img class="img-responsive img-circle" src="dist/img/user2.png" alt="avatar"/>
+                                                <img class="img-responsive img-circle" src="<?=base_url();?>assets/dist/img/user2.png" alt="avatar"/>
                                             </div>
                                             <div class="sl-content">
                                                 <span class="inline-block capitalize-font   pull-left message-per">Madalyn Rascon</span>
@@ -284,7 +284,7 @@
                                     <a href="javascript:void(0)">
                                         <div class="sl-item unread-message">
                                             <div class="sl-avatar avatar avatar-sm avatar-circle">
-                                                <img class="img-responsive img-circle" src="dist/img/user3.png" alt="avatar"/>
+                                                <img class="img-responsive img-circle" src="<?=base_url();?>assets/dist/img/user3.png" alt="avatar"/>
                                             </div>
                                             <div class="sl-content">
                                                 <span class="inline-block capitalize-font   pull-left message-per">Ezequiel Merideth</span>
@@ -298,7 +298,7 @@
                                     <a href="javascript:void(0)">
                                         <div class="sl-item unread-message">
                                             <div class="sl-avatar avatar avatar-sm avatar-circle">
-                                                <img class="img-responsive img-circle" src="dist/img/user4.png" alt="avatar"/>
+                                                <img class="img-responsive img-circle" src="<?=base_url();?>assets/dist/img/user4.png" alt="avatar"/>
                                             </div>
                                             <div class="sl-content">
                                                 <span class="inline-block capitalize-font   pull-left message-per">Jonnie Metoyer</span>
@@ -312,7 +312,7 @@
                                     <a href="javascript:void(0)">
                                         <div class="sl-item">
                                             <div class="sl-avatar avatar avatar-sm avatar-circle">
-                                                <img class="img-responsive img-circle" src="dist/img/user.png" alt="avatar"/>
+                                                <img class="img-responsive img-circle" src="<?=base_url();?>assets/dist/img/user.png" alt="avatar"/>
                                             </div>
                                             <div class="sl-content">
                                                 <span class="inline-block capitalize-font   pull-left message-per">Priscila Shy</span>
@@ -326,7 +326,7 @@
                                     <a href="javascript:void(0)">
                                         <div class="sl-item">
                                             <div class="sl-avatar avatar avatar-sm avatar-circle">
-                                                <img class="img-responsive img-circle" src="dist/img/user1.png" alt="avatar"/>
+                                                <img class="img-responsive img-circle" src="<?=base_url();?>assets/dist/img/user1.png" alt="avatar"/>
                                             </div>
                                             <div class="sl-content">
                                                 <span class="inline-block capitalize-font   pull-left message-per">Linda Stack</span>

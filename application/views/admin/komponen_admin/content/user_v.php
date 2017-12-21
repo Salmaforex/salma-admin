@@ -58,8 +58,10 @@
                                 <!-- start pill-struct -->
 
 								<ul role="tablist" class="nav nav-pills" id="myTabs_6">
-									<li class="active" role="presentation"><a aria-expanded="true" data-toggle="tab" role="tab" id="home_tab_6" href="#home_6"><?= $sub_title; ?></a></li>
-									<li role="presentation" class=""><a data-toggle="tab" id="profile_tab_6" role="tab" href="#profile_6" aria-expanded="false"><?= $sub_title2; ?></a></li>
+									<li class="active" role="presentation"><a aria-expanded="true" 
+																			  data-toggle="tab" role="tab" id="home_tab_6" href="#home_6"><?= $sub_title; ?></a></li>
+									<li role="presentation" class=""><a data-toggle="tab" 
+																		id="profile_tab_6" role="tab" href="#profile_6" aria-expanded="false"><?= $sub_title2; ?></a></li>
 								</ul>
 								<div class="tab-content" id="myTabContent_6">
                                     <!-- start tab-content -->
