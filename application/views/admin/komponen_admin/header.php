@@ -11,43 +11,47 @@
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <!-- start navbar -->
-        
+
         <div class="mobile-only-brand pull-left">
             <!-- start mobile-only-brand -->
-            
+
             <div class="nav-header pull-left">
                 <!-- start nav-header -->
-                
+
                 <div class="logo-wrap">
                     <!-- start logo-wrap -->
-                    
+
                     <a href="index.html">
-                        <img class="brand-img" src="dist/img/logo.png" alt="brand"/>
+                        <img class="brand-img" src="<?php echo base_url('assets/dist/img/logo.png'); ?>" alt="brand"/>
                         <span class="brand-text">Philbert</span>
                     </a>
-                    
+
                     <!-- end logo-wrap -->
                 </div>
-                
+
                 <!-- end nav-header -->
-            </div>	
+            </div>
             <a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i class="zmdi zmdi-menu"></i></a>
             <a id="toggle_mobile_search" data-toggle="collapse" data-target="#search_form" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-search"></i></a>
             <a id="toggle_mobile_nav" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-more"></i></a>
             <form id="search_form" role="search" class="top-nav-search collapse pull-left">
                 <div class="input-group">
+                    <!-- start input-group -->
+
                     <input type="text" name="example-input1-group2" class="form-control" placeholder="Search">
                     <span class="input-group-btn">
-                        <button type="button" class="btn  btn-default"  data-target="#search_form" data-toggle="collapse" aria-label="Close" aria-expanded="true"><i class="zmdi zmdi-search"></i></button>
+                    <button type="button" class="btn  btn-default"  data-target="#search_form" data-toggle="collapse" aria-label="Close" aria-expanded="true"><i class="zmdi zmdi-search"></i></button>
                     </span>
+
+                    <!-- end input-group -->
                 </div>
             </form>
-            
+
             <!-- end mobile-only-brand -->
         </div>
         <div id="mobile_only_nav" class="mobile-only-nav pull-right">
             <!-- start mobile_only_nav -->
-            
+
             <ul class="nav navbar-right top-nav pull-right">
                 <li>
                     <a id="open_right_sidebar" href="#"><i class="zmdi zmdi-settings top-nav-icon"></i></a>
@@ -95,7 +99,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </div>	
+                            </div>
                         </li>
                         <li>
                             <div class="app-box-bottom-wrap">
@@ -141,7 +145,7 @@
                                     <a href="javascript:void(0);">
                                         <div class="pull-left">
                                             <i class="zmdi zmdi-shopping-basket mr-20"></i><span class="right-nav-text">E-Commerce</span>
-                                        </div>	
+                                        </div>
                                         <div class="pull-right"><span class="label label-success">hot</span>
                                         </div>
                                         <div class="clearfix"></div>
@@ -194,11 +198,11 @@
                                         <a href="#">
                                             <img src="dist/img/chair2.jpg" alt="chair">
                                             <span>square chair</span>
-                                        </a>								
+                                        </a>
                                     </div>
                                 </li>
                             </ul>
-                        </li>	
+                        </li>
                     </ul>
                 </li>
                 <li class="dropdown alert-drp">
@@ -226,7 +230,7 @@
                                             <div class="clearfix"></div>
                                             <p class="truncate">Your customer subscribed for the basic plan. The customer will pay $25 per month.</p>
                                         </div>
-                                    </a>	
+                                    </a>
                                 </div>
                                 <hr class="light-grey-hr ma-0"/>
                                 <div class="sl-item">
@@ -240,7 +244,7 @@
                                             <div class="clearfix"></div>
                                             <p class="truncate">Some technical error occurred needs to be resolved.</p>
                                         </div>
-                                    </a>	
+                                    </a>
                                 </div>
                                 <hr class="light-grey-hr ma-0"/>
                                 <div class="sl-item">
@@ -254,7 +258,7 @@
                                             <div class="clearfix"></div>
                                             <p class="truncate"> The last payment for your G Suite Basic subscription failed.</p>
                                         </div>
-                                    </a>	
+                                    </a>
                                 </div>
                                 <hr class="light-grey-hr ma-0"/>
                                 <div class="sl-item">
@@ -268,7 +272,7 @@
                                             <div class="clearfix"></div>
                                             <p class="truncate">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
                                         </div>
-                                    </a>	
+                                    </a>
                                 </div>
                                 <hr class="light-grey-hr ma-0"/>
                                 <div class="sl-item">
@@ -282,7 +286,7 @@
                                             <div class="clearfix"></div>
                                             <p class="truncate">consectetur, adipisci velit.</p>
                                         </div>
-                                    </a>	
+                                    </a>
                                 </div>
                             </div>
                         </li>
@@ -296,7 +300,7 @@
                     </ul>
                 </li>
                 <li class="dropdown auth-drp">
-                    <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><?= $name; ?><img src="<?php echo base_url('assets/img/11209453_10205679030848848_3039779736844740174_n.jpg'); ?>" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
+                    <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><?= $name; ?><img src="<?php echo base_url('assets/img/user.png'); ?>" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
                     <ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
                         <li>
                             <a href="profile.html"><i class="zmdi zmdi-account"></i><span>Profile</span></a>
@@ -323,21 +327,21 @@
                                 <li>
                                     <a href="#"><i class="zmdi zmdi-minus-circle-outline text-danger"></i><span>offline</span></a>
                                 </li>
-                            </ul>	
+                            </ul>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="<?php site_url('beranda/keluar'); ?>"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
+                            <a href="admin/beranda/keluar"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
                         </li>
                     </ul>
                 </li>
             </ul>
-            
+
             <!-- end mobile_only_nav -->
         </div>
-        
+
         <!-- end navbar -->
     </nav>
-    
+
     <!-- end wrapper / Top Menu Items -->
 </div>

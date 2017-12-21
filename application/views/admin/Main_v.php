@@ -26,15 +26,21 @@
     <body>
         <!-- start body -->
 
-        <?php $this->load->view("komponen/header.php"); ?>
+        <?php $this->load->view("admin/komponen_admin/header.php"); ?>
 
-        <?php $this->load->view("komponen/leftside.php"); ?>
+        <?php $this->load->view("admin/komponen_admin/leftside.php"); ?>
 
-        <?php $this->load->view("komponen/rightside.php"); ?>
+        <?php $this->load->view("admin/komponen_admin/rightside.php"); ?>
 
-        <?php $this->load->view("komponen/maincontent.php"); ?>
+        <?php
+            if (isset($content)) {
+                $this->load->view('admin/komponen_admin/content/'.$content."_v");
+            } else {
+                $this->load->view("admin/komponen_admin/maincontent.php");
+            }
+        ?>
 
-        <?php $this->load->view("komponen/footer.php"); ?>
+        <?php $this->load->view("admin/komponen_admin/footer.php"); ?>
 
         <!-- end body -->
     </body>

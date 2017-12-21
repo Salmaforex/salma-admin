@@ -1,38 +1,37 @@
 <div class="fixed-sidebar-left">
     <!-- start fixed-sidebar-leftbar / Left Sidebar Menu -->
-    
+
     <ul class="nav navbar-nav side-nav nicescroll-bar">
         <li class="navigation-header">
-            <span>Main</span> 
+            <span>Main</span>
             <i class="zmdi zmdi-more"></i>
         </li>
         <li>
-            <a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span class="right-nav-text">Dashboard</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-            <ul id="dashboard_dr" class="collapse collapse-level-1">
-                <li>
-                    <a class="active-page" href="index.html">Analytical</a>
-                </li>
-                <li>
-                    <a href="index2.html">Demographic</a>
-                </li>
-                <li>
-                    <a href="index3.html">Project</a>
-                </li>
-                <li>
-                    <a href="index4.html">Hospital</a>
-                </li>
-                <li>
-                    <a href="index5.html">HRM</a>
-                </li>
-                <li>
-                    <a href="index6.html">Real Estate</a>
-                </li>
-                <li>
-                    <a href="profile.html">profile</a>
-                </li>
+            <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#keuangan"><div class="pull-left"><i class="fa fa-users mr-20"></i><span class="right-nav-text">Keuangan</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+            <ul id="keuangan" class="collapse collapse-level-1">
+                <li><a href="<?= site_url('admin/keuangan/currency'); ?>">Currency</a><li>
+                <li><a href="<?= site_url('admin/keuangan/tarif'); ?>">Tarif</a></li>
             </ul>
         </li>
         <li>
+            <a class="" href="javascript:void(0);" data-toggle="collapse" data-target="#transaksi"><div class="pull-left"><i class="fa fa-users mr-20"></i><span class="right-nav-text">Transaksi</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+            <ul id="transaksi" class="collapse collapse-level-1">
+                <li><a href="#">Withdraw</a><li>
+                <li><a href="#">Deposit</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#member"><div class="pull-left"><i class="fa fa-users mr-20"></i><span class="right-nav-text">Member</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+            <ul id="member" class="collapse collapse-level-1">
+                <li>
+                    <a href="<?= site_url('admin/member/user'); ?>">User</a>
+                </li>
+                <li>
+                    <a href="#">Agent</a>
+                </li>
+            </ul>
+        </li>
+        <!-- <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><div class="pull-left"><i class="zmdi zmdi-shopping-basket mr-20"></i><span class="right-nav-text">E-Commerce</span></div><div class="pull-right"><span class="label label-success">hot</span></div><div class="clearfix"></div></a>
             <ul id="ecom_dr" class="collapse collapse-level-1">
                 <li>
@@ -57,18 +56,15 @@
                     <a href="product-checkout.html">Checkout</a>
                 </li>
             </ul>
-        </li>
-        <li>
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr"><div class="pull-left"><i class="zmdi zmdi-apps mr-20"></i><span class="right-nav-text">Apps </span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+        </li> -->
+        <!-- <li>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr"><div class="pull-left"><i class="fa fa-gears mr-20"></i><span class="right-nav-text">Setting </span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
             <ul id="app_dr" class="collapse collapse-level-1">
                 <li>
-                    <a href="chats.html">chats</a>
+                    <a href="#">Negara</a>
                 </li>
                 <li>
-                    <a href="calendar.html">calendar</a>
-                </li>
-                <li>
-                    <a href="weather.html">weather</a>
+                    <a href="#">Mata Uang</a>
                 </li>
                 <li>
                     <a href="javascript:void(0);" data-toggle="collapse" data-target="#email_dr">Email<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
@@ -99,16 +95,16 @@
                     <a href="todo-tasklist.html">To Do/Tasklist</a>
                 </li>
             </ul>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="widgets.html"><div class="pull-left"><i class="zmdi zmdi-flag mr-20"></i><span class="right-nav-text">widgets</span></div><div class="pull-right"><span class="label label-warning">8</span></div><div class="clearfix"></div></a>
-        </li>
-        <li><hr class="light-grey-hr mb-10"/></li>
-        <li class="navigation-header">
-            <span>component</span> 
+        </li> -->
+        <!-- <li><hr class="light-grey-hr mb-10"/></li> -->
+        <!-- <li class="navigation-header">
+            <span>component</span>
             <i class="zmdi zmdi-more"></i>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_dr"><div class="pull-left"><i class="zmdi zmdi-smartphone-setup mr-20"></i><span class="right-nav-text">UI Elements</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
             <ul id="ui_dr" class="collapse collapse-level-1 two-col-list">
                 <li>
@@ -166,8 +162,8 @@
                     <a href="bootstrap-ui.html">Bootstrap UI</a>
                 </li>
             </ul>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#form_dr"><div class="pull-left"><i class="zmdi zmdi-edit mr-20"></i><span class="right-nav-text">Forms</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
             <ul id="form_dr" class="collapse collapse-level-1 two-col-list">
                 <li>
@@ -216,8 +212,8 @@
                     <a href="typeahead-js.html">typeahead</a>
                 </li>
             </ul>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#chart_dr"><div class="pull-left"><i class="zmdi zmdi-chart-donut mr-20"></i><span class="right-nav-text">Charts </span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
             <ul id="chart_dr" class="collapse collapse-level-1 two-col-list">
                 <li>
@@ -242,8 +238,8 @@
                     <a href="peity-chart.html">Peity Chart</a>
                 </li>
             </ul>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#table_dr"><div class="pull-left"><i class="zmdi zmdi-format-size mr-20"></i><span class="right-nav-text">Tables</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
             <ul id="table_dr" class="collapse collapse-level-1 two-col-list">
                 <li>
@@ -274,8 +270,8 @@
                     <a href="jsgrid-table.html">Jsgrid Table</a>
                 </li>
             </ul>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#icon_dr"><div class="pull-left"><i class="zmdi zmdi-iridescent mr-20"></i><span class="right-nav-text">Icons</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
             <ul id="icon_dr" class="collapse collapse-level-1">
                 <li>
@@ -297,8 +293,8 @@
                     <a href="glyphicons.html">Glyphicons</a>
                 </li>
             </ul>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#maps_dr"><div class="pull-left"><i class="zmdi zmdi-map mr-20"></i><span class="right-nav-text">maps</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
             <ul id="maps_dr" class="collapse collapse-level-1">
                 <li>
@@ -308,13 +304,13 @@
                     <a href="google-map.html">Google Map</a>
                 </li>
             </ul>
-        </li>
-        <li><hr class="light-grey-hr mb-10"/></li>
-        <li class="navigation-header">
-            <span>featured</span> 
+        </li> -->
+        <!-- <li><hr class="light-grey-hr mb-10"/></li> -->
+        <!-- <li class="navigation-header">
+            <span>featured</span>
             <i class="zmdi zmdi-more"></i>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#pages_dr"><div class="pull-left"><i class="zmdi zmdi-google-pages mr-20"></i><span class="right-nav-text">Special Pages</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
             <ul id="pages_dr" class="collapse collapse-level-1 two-col-list">
                 <li>
@@ -372,11 +368,11 @@
                     <a href="faq.html">FAQ</a>
                 </li>
             </ul>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="documentation.html"><div class="pull-left"><i class="zmdi zmdi-book mr-20"></i><span class="right-nav-text">documentation</span></div><div class="clearfix"></div></a>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#dropdown_dr_lv1"><div class="pull-left"><i class="zmdi zmdi-filter-list mr-20"></i><span class="right-nav-text">multilevel</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
             <ul id="dropdown_dr_lv1" class="collapse collapse-level-1">
                 <li>
@@ -394,8 +390,8 @@
                     </ul>
                 </li>
             </ul>
-        </li>
+        </li> -->
     </ul>
-    
+
     <!-- end fixed-sidebar-leftbar / Left Sidebar Menu -->
 </div>

@@ -1,290 +1,290 @@
 <div class="page-wrapper">
     <!-- start page-wrapper / Main Content -->
-    
+
     <div class="container-fluid pt-25">
         <!-- start container-fluid -->
-        
+
         <!-- ##### START ROW 1 ##### -->
         <div class="row">
             <!-- start row -->
-            
+
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <!-- start col -->
-                
+
                 <div class="panel panel-default card-view pa-0">
                     <!-- start panel -->
-                    
+
                     <div class="panel-wrapper collapse in">
                         <!-- start panel-wrapper -->
-                        
+
                         <div class="panel-body pa-0">
                             <!-- start panel-body -->
-                            
+
                             <div class="sm-data-box">
                                 <!-- start sm-data-box -->
-                                
+
                                 <div class="container-fluid">
                                     <!-- start container-fluid -->
-                                    
+
                                     <div class="row">
                                         <!-- start row -->
-                                        
+
                                         <div class="col-xs-6 text-center pl-0 pr-0 data-wrap-left">
                                             <!-- start col -->
-                                            
+
                                             <span class="txt-dark block counter"><span class="counter-anim">914,001</span></span>
                                             <span class="weight-500 uppercase-font block font-13">visits</span>
-                                            
+
                                             <!-- end col -->
                                         </div>
                                         <div class="col-xs-6 text-center  pl-0 pr-0 data-wrap-right">
                                             <!-- start col -->
-                                            
+
                                             <i class="icon-user-following data-right-rep-icon txt-light-grey"></i>
-                                            
+
                                             <!-- end col -->
                                         </div>
-                                        
+
                                         <!-- end row -->
                                     </div>
-                                    
+
                                     <!-- end container-fluid -->
                                 </div>
-                                
+
                                 <!-- end sm-data-box -->
                             </div>
-                            
+
                             <!-- end panel-body -->
                         </div>
-                        
+
                         <!-- end panel-wrapper -->
                     </div>
-                    
+
                     <!-- end panel -->
                 </div>
-                
+
                 <!-- end col -->
             </div>
-            
+
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <!-- start col -->
-                
+
                 <div class="panel panel-default card-view pa-0">
                     <!-- start panel -->
-                    
+
                     <div class="panel-wrapper collapse in">
                         <!-- start panel-wrapper -->
-                        
+
                         <div class="panel-body pa-0">
                             <!-- start panel-body -->
-                            
+
                             <div class="sm-data-box">
                                 <!-- start sm-data-box -->
-                                
+
                                 <div class="container-fluid">
                                     <!-- start container-fluid -->
-                                    
+
                                     <div class="row">
                                         <!-- start row -->
-                                        
+
                                         <div class="col-xs-6 text-center pl-0 pr-0 data-wrap-left">
                                             <!-- start col -->
-                                            
+
                                             <span class="txt-dark block counter"><span class="counter-anim">46.41</span>%</span>
                                             <span class="weight-500 uppercase-font block">bounce rate</span>
-                                            
+
                                             <!-- end col -->
                                         </div>
                                         <div class="col-xs-6 text-center  pl-0 pr-0 data-wrap-right">
                                             <!-- start col -->
-                                            
+
                                             <i class="icon-control-rewind data-right-rep-icon txt-light-grey"></i>
-                                            
+
                                             <!-- end col -->
                                         </div>
-                                        
+
                                         <!-- end row -->
                                     </div>
-                                    
+
                                     <!-- end container-fluid -->
                                 </div>
-                                
+
                                 <!-- end sm-data-box -->
                             </div>
-                            
+
                             <!-- end panel-body -->
                         </div>
-                        
+
                         <!-- end panel-wrapper -->
                     </div>
-                    
+
                     <!-- end panel -->
                 </div>
-                
+
                 <!-- end col -->
             </div>
-            
+
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <!-- start col -->
-                
+
                 <div class="panel panel-default card-view pa-0">
                     <!-- start panel -->
-                    
+
                     <div class="panel-wrapper collapse in">
                         <!-- start panel-wrapper -->
-                        
+
                         <div class="panel-body pa-0">
                             <!-- start panel-body -->
-                            
+
                             <div class="sm-data-box">
                                 <!-- start sm-data-box -->
-                                
+
                                 <div class="container-fluid">
                                     <!-- start container-fluid -->
-                                    
+
                                     <div class="row">
                                         <!-- start row -->
-                                        
+
                                         <div class="col-xs-6 text-center pl-0 pr-0 data-wrap-left">
                                             <!-- start col -->
-                                            
+
                                             <span class="txt-dark block counter"><span class="counter-anim">4,054,876</span></span>
                                             <span class="weight-500 uppercase-font block">pageviews</span>
-                                            
+
                                             <!-- end col -->
                                         </div>
                                         <div class="col-xs-6 text-center  pl-0 pr-0 data-wrap-right">
                                             <!-- start col -->
-                                            
+
                                             <i class="icon-layers data-right-rep-icon txt-light-grey"></i>
-                                            
+
                                             <!-- end col -->
                                         </div>
-                                        
+
                                         <!-- end row -->
                                     </div>
-                                    
+
                                     <!-- end container-fluid -->
                                 </div>
-                                
+
                                 <!-- end sm-data-box -->
                             </div>
-                            
+
                             <!-- end panel-body -->
                         </div>
-                        
+
                         <!-- end panel-wrapper -->
                     </div>
-                    
+
                     <!-- end panel -->
                 </div>
-                
+
                 <!-- end col -->
             </div>
-            
+
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <!-- start col -->
-                
+
                 <div class="panel panel-default card-view pa-0">
-                    
+
                     <!-- start panel -->
-                    
+
                     <div class="panel-wrapper collapse in">
-                        
+
                         <!-- start panel -->
-                        
+
                         <div class="panel-body pa-0">
                             <!-- start panel-body -->
-                            
+
                             <div class="sm-data-box">
                                 <!-- start sm-data-box -->
-                                
+
                                 <div class="container-fluid">
                                     <!-- start container-fluid -->
-                                    
+
                                     <div class="row">
                                         <!-- start row -->
-                                        
+
                                         <div class="col-xs-6 text-center pl-0 pr-0 data-wrap-left">
                                             <!-- start col -->
-                                            
+
                                             <span class="txt-dark block counter"><span class="counter-anim">46.43</span>%</span>
                                             <span class="weight-500 uppercase-font block">growth rate</span>
-                                            
+
                                             <!-- end col -->
                                         </div>
                                         <div class="col-xs-6 text-center  pl-0 pr-0 pt-25  data-wrap-right">
                                             <!-- start col -->
-                                            
+
                                             <div id="sparkline_4" style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
-                                            
+
                                             <!-- end col -->
                                         </div>
-                                        
+
                                         <!-- end row -->
                                     </div>
-                                    
+
                                     <!-- end container-fluid -->
                                 </div>
-                                
+
                                 <!-- end sm-data-box -->
                             </div>
-                            
+
                             <!-- end panel-body -->
                         </div>
-                        
+
                         <!-- end panel-wrapper -->
                     </div>
-                    
+
                     <!-- end panel -->
                 </div>
-                
+
                 <!-- end col -->
             </div>
-            
+
             <!-- end row -->
         </div>
         <!-- ##### END ROW 1 ##### -->
-        
+
         <!-- ##### START ROW 2 ##### -->
         <div class="row">
             <!-- start row -->
-            
+
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <!-- start col -->
-                
+
                 <div class="panel panel-default card-view">
                     <!-- start panel -->
-                    
+
                     <div class="panel-heading">
                         <!-- start panel-heading -->
-                        
+
                         <div class="pull-left">
                             <!-- start pull-left -->
-                            
+
                             <h6 class="panel-title txt-dark">user statistics</h6>
-                            
+
                             <!-- start pull-left -->
                         </div>
                         <div class="pull-right">
                             <!-- start pull-right -->
-                            
+
                             <span class="no-margin-switcher">
-                                <input type="checkbox" checked id="morris_switch"  class="js-switch" data-color="#2ecd99" data-secondary-color="#dedede" data-size="small"/>	
+                                <input type="checkbox" checked id="morris_switch"  class="js-switch" data-color="#2ecd99" data-secondary-color="#dedede" data-size="small"/>
                             </span>
-                            
+
                             <!-- end pull-right -->
                         </div>
                         <div class="clearfix"></div>
-                        
+
                         <!-- end panel-heading -->
                     </div>
                     <div class="panel-wrapper collapse in">
                         <!-- start panel-wrapper -->
-                        
+
                         <div class="panel-body">
                             <!-- start panel-body -->
-                            
+
                             <div id="area_chart" class="morris-chart" style="height:293px;"></div>
                             <ul class="flex-stat mt-40">
                                 <li>
@@ -302,49 +302,49 @@
                                     </span>
                                 </li>
                             </ul>
-                            
+
                             <!-- end panel-body -->
                         </div>
-                        
+
                         <!-- end panel-wrapper -->
                     </div>
-                    
+
                     <!-- end panel -->
                 </div>
-                
+
                 <!-- end col -->
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <!-- start col -->
-                
+
                 <div class="panel panel-default card-view">
                     <!-- start panel -->
-                    
+
                     <div class="panel-wrapper collapse in">
                         <!-- start panel-wrapper -->
-                        
+
                         <div class="panel-body sm-data-box-1">
                             <!-- start panel-body -->
-                            
-                            <span class="uppercase-font weight-500 font-14 block text-center txt-dark">customer satisfaction</span>	
+
+                            <span class="uppercase-font weight-500 font-14 block text-center txt-dark">customer satisfaction</span>
                             <div class="cus-sat-stat weight-500 txt-success text-center mt-5">
                                 <!-- start cus-sat-stat -->
-                                
+
                                 <span class="counter-anim">93.13</span><span>%</span>
-                                
+
                                 <!-- end cus-sat-stat -->
                             </div>
                             <div class="progress-anim mt-20">
                                 <!-- start progress-anim -->
-                                
+
                                 <div class="progress">
                                     <!-- start progress -->
-                                    
+
                                     <div class="progress-bar progress-bar-success wow animated progress-animated" role="progressbar" aria-valuenow="93.12" aria-valuemin="0" aria-valuemax="100"></div>
-                                    
+
                                     <!-- end progress -->
                                 </div>
-                                
+
                                 <!-- end progress-anim -->
                             </div>
                             <ul class="flex-stat mt-5">
@@ -363,53 +363,53 @@
                                     </span>
                                 </li>
                             </ul>
-                            
+
                             <!-- end panel-body -->
                         </div>
-                        
+
                         <!-- end panel-wrapper -->
                     </div>
-                    
+
                     <!-- end panel -->
                 </div>
                 <div class="panel panel-default card-view">
                     <!-- start panel -->
-                    
+
                     <div class="panel-heading">
                         <!-- start panel-heading -->
-                        
+
                         <div class="pull-left">
                             <!-- start pull-left -->
-                            
+
                             <h6 class="panel-title txt-dark">browser stats</h6>
-                            
+
                             <!-- end pull-left -->
                         </div>
                         <div class="pull-right">
                             <!-- start pull-right -->
-                            
+
                             <a href="#" class="pull-left inline-block mr-15">
                                 <i class="zmdi zmdi-download"></i>
                             </a>
                             <a href="#" class="pull-left inline-block close-panel" data-effect="fadeOut">
                                 <i class="zmdi zmdi-close"></i>
                             </a>
-                            
+
                             <!-- end pull-right -->
                         </div>
                         <div class="clearfix"></div>
-                        
+
                         <!-- end panel-heading -->
                     </div>
                     <div class="panel-wrapper collapse in">
                         <!-- start panel-wrapper -->
-                        
+
                         <div class="panel-body">
                             <!-- start panel-body -->
-                            
+
                             <div>
                                 <!-- start div -->
-                                
+
                                 <span class="pull-left inline-block capitalize-font txt-dark">
                                     google chrome
                                 </span>
@@ -433,146 +433,146 @@
                                 </span>
                                 <span class="label label-primary pull-right">10%</span>
                                 <div class="clearfix"></div>
-                                
+
                                 <!-- end div -->
                             </div>
-                            
+
                             <!-- end panel-body -->
                         </div>
-                        
+
                         <!-- end panel-wrapper -->
                     </div>
-                    
+
                     <!-- end panel -->
                 </div>
-                
+
                 <!-- end col -->
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <!-- start col -->
-                
+
                 <div class="panel panel-default card-view panel-refresh">
                     <!-- start panel -->
-                    
+
                     <div class="refresh-container">
                         <!-- start refresh-container -->
-                        
+
                         <div class="la-anim-1"></div>
-                        
+
                         <!-- end refresh-container -->
                     </div>
                     <div class="panel-heading">
                         <!-- start panel-heading -->
-                        
+
                         <div class="pull-left">
                             <!-- start pull-left -->
-                            
+
                             <h6 class="panel-title txt-dark">Visit by Traffic Types</h6>
-                            
+
                             <!-- end pull-left -->
                         </div>
                         <div class="pull-right">
                             <!-- start pull-right -->
-                            
+
                             <a href="#" class="pull-left inline-block refresh mr-15">
                                 <i class="zmdi zmdi-replay"></i>
                             </a>
                             <div class="pull-left inline-block dropdown">
                                 <!-- start pull-left -->
-                                
+
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></a>
                                 <ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
                                     <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Devices</a></li>
                                     <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>General</a></li>
                                     <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Referral</a></li>
                                 </ul>
-                                
+
                                 <!-- end pull-left -->
                             </div>
-                            
+
                             <!-- end pull-right -->
                         </div>
                         <div class="clearfix"></div>
-                        
+
                         <!-- end panel-heading -->
                     </div>
                     <div class="panel-wrapper collapse in">
                         <!-- start panel-wrapper -->
-                        
+
                         <div class="panel-body">
                             <!-- start panel-body -->
-                            
+
                             <div>
                                 <!-- start div -->
-                                
+
                                 <canvas id="chart_6" height="191"></canvas>
-                                
+
                                 <!-- end div -->
-                            </div>	
+                            </div>
                             <hr class="light-grey-hr row mt-10 mb-15"/>
                             <div class="label-chatrs">
                                 <!-- start label-chatrs -->
-                                
+
                                 <div class="">
                                     <!-- start div -->
-                                    
+
                                     <span class="clabels clabels-lg inline-block bg-blue mr-10 pull-left"></span>
                                     <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">44.46% organic</span><span class="block txt-grey">356 visits</span></span>
                                     <div id="sparkline_1" class="pull-right" style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
                                     <div class="clearfix"></div>
-                                    
+
                                     <!-- end div -->
                                 </div>
-                                
+
                                 <!-- end label-chatrs -->
                             </div>
                             <hr class="light-grey-hr row mt-10 mb-15"/>
                             <div class="label-chatrs">
                                 <!-- start label-chatrs -->
-                                
+
                                 <div class="">
                                     <!-- start div -->
-                                    
+
                                     <span class="clabels clabels-lg inline-block bg-green mr-10 pull-left"></span>
                                     <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">5.54% Refrral</span><span class="block txt-grey">36 visits</span></span>
                                     <div id="sparkline_2" class="pull-right" style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
                                     <div class="clearfix"></div>
-                                    
+
                                     <!-- end div -->
                                 </div>
-                                
+
                                 <!-- end label-chatrs -->
                             </div>
                             <hr class="light-grey-hr row mt-10 mb-15"/>
                             <div class="label-chatrs">
                                 <!-- start label-chatrs -->
-                                
+
                                 <div class="">
                                     <!-- start div -->
-                                    
+
                                     <span class="clabels clabels-lg inline-block bg-yellow mr-10 pull-left"></span>
                                     <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">50% Other</span><span class="block txt-grey">245 visits</span></span>
                                     <div id="sparkline_3" class="pull-right" style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
                                     <div class="clearfix"></div>
-                                    
+
                                     <!-- end div -->
                                 </div>
-                                
+
                                 <!-- end label-chatrs -->
                             </div>
-                            
+
                             <!-- end panel-body -->
                         </div>
-                        
+
                         <!-- end panel-wrapper -->
                     </div>
-                    
+
                     <!-- end panel -->
                 </div>
-                
+
                 <!-- end col -->
             </div>
-            
+
             <!-- end row -->
         </div>
         <!-- ##### END ROW 2 ##### -->
@@ -580,33 +580,33 @@
         <!-- ##### START ROW 3 ##### -->
         <div class="row">
             <!-- start row -->
-            
+
             <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
                 <!-- start col -->
-                
+
                 <div class="panel panel-default card-view panel-refresh">
                     <!-- start panel -->
-                    
+
                     <div class="refresh-container">
                         <!-- start refresh-container -->
-                        
+
                         <div class="la-anim-1"></div>
-                        
+
                         <!-- end refresh-container -->
                     </div>
                     <div class="panel-heading">
                         <!-- start panel-heading -->
-                        
+
                         <div class="pull-left">
                             <!-- start pull-left -->
-                            
+
                             <h6 class="panel-title txt-dark">social campaigns</h6>
-                            
+
                             <!-- end pull-left -->
                         </div>
                         <div class="pull-right">
                             <!-- start pull-right -->
-                            
+
                             <a href="#" class="pull-left inline-block refresh mr-15">
                                 <i class="zmdi zmdi-replay"></i>
                             </a>
@@ -615,35 +615,35 @@
                             </a>
                             <div class="pull-left inline-block dropdown">
                                 <!-- start pull-left -->
-                                
+
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></a>
                                 <ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
                                     <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Edit</a></li>
                                     <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Delete</a></li>
                                     <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>New</a></li>
                                 </ul>
-                                
+
                                 <!-- end pull-left -->
                             </div>
-                            
+
                             <!-- end pull-right -->
                         </div>
                         <div class="clearfix"></div>
-                        
+
                         <!-- end panel-heading -->
                     </div>
                     <div class="panel-wrapper collapse in">
                         <!-- start panel-wrapper -->
-                        
+
                         <div class="panel-body row pa-0">
                             <!-- start panel-body -->
-                            
+
                             <div class="table-wrap">
                                 <!-- start table-wrap -->
-                                
+
                                 <div class="table-responsive">
                                     <!-- start table-responsive -->
-                                    
+
                                     <table class="table table-hover mb-0">
                                         <thead>
                                             <tr>
@@ -712,152 +712,152 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    
+
                                     <!-- end table-responsive -->
                                 </div>
-                                
+
                                 <!-- end table-wrap -->
                             </div>
-                            
+
                             <!-- end panel-body -->
                         </div>
-                        
+
                         <!-- end panel-wrapper -->
                     </div>
-                    
+
                     <!-- end panel -->
                 </div>
-                
+
                 <!-- end col -->
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
                 <!-- start col -->
-                
+
                 <div class="panel panel-default card-view panel-refresh">
                     <!-- start panel -->
-                    
+
                     <div class="refresh-container">
                         <!-- start refresh-container -->
                         <div class="la-anim-1"></div>
-                        
+
                         <!-- end refresh-container -->
                     </div>
                     <div class="panel-heading">
                         <!-- start panel-heading -->
-                        
+
                         <div class="pull-left">
                             <!-- start pull-left -->
-                            
+
                             <h6 class="panel-title txt-dark">Advertising & Promotions</h6>
-                            
+
                             <!-- end pull-left -->
                         </div>
                         <div class="pull-right">
                             <!-- start pull-right -->
-                            
+
                             <a href="#" class="pull-left inline-block refresh mr-15">
                                 <i class="zmdi zmdi-replay"></i>
                             </a>
                             <div class="pull-left inline-block dropdown">
                                 <!-- start pull-left -->
-                                
+
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></a>
                                 <ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
                                     <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>option 1</a></li>
                                     <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>option 2</a></li>
                                     <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>option 3</a></li>
                                 </ul>
-                                
+
                                 <!-- end pull-left -->
                             </div>
-                            
+
                             <!-- end pull-right -->
                         </div>
                         <div class="clearfix"></div>
-                        
+
                         <!-- end panel-heading -->
                     </div>
                     <div class="panel-wrapper collapse in">
                         <!-- start panel-wrapper -->
-                        
+
                         <div class="panel-body">
                             <!-- start panel-body -->
-                            
+
                             <div>
                                 <!-- start div -->
-                                
+
                                 <canvas id="chart_2" height="253"></canvas>
-                                
+
                                 <!-- end div -->
-                            </div>	
+                            </div>
                             <div class="label-chatrs mt-30">
                                 <!-- start label-chatrs -->
-                                
+
                                 <div class="inline-block mr-15">
                                     <!-- start inline-block -->
-                                    
+
                                     <span class="clabels inline-block bg-yellow mr-5"></span>
                                     <span class="clabels-text font-12 inline-block txt-dark capitalize-font">Active</span>
-                                    
+
                                     <!-- end inline-block -->
                                 </div>
                                 <div class="inline-block mr-15">
                                     <!-- start inline-block -->
-                                    
+
                                     <span class="clabels inline-block bg-blue mr-5"></span>
                                     <span class="clabels-text font-12 inline-block txt-dark capitalize-font">Closed</span>
-                                    
-                                    <!-- end inline-block -->
-                                </div>	
-                                <div class="inline-block">
-                                    <!-- start inline-block -->
-                                    
-                                    <span class="clabels inline-block bg-green mr-5"></span>
-                                    <span class="clabels-text font-12 inline-block txt-dark capitalize-font">Hold</span>
-                                    
+
                                     <!-- end inline-block -->
                                 </div>
-                                
+                                <div class="inline-block">
+                                    <!-- start inline-block -->
+
+                                    <span class="clabels inline-block bg-green mr-5"></span>
+                                    <span class="clabels-text font-12 inline-block txt-dark capitalize-font">Hold</span>
+
+                                    <!-- end inline-block -->
+                                </div>
+
                                 <!-- end label-chatrs -->
                             </div>
-                            
+
                             <!-- end panel-body -->
                         </div>
-                        
+
                         <!-- end panel-wrapper -->
                     </div>
-                    
+
                     <!-- end panel -->
                 </div>
-                
+
                 <!-- end col -->
             </div>
-            
+
             <!-- end row -->
         </div>
-        
+
         <!-- end container-fluid -->
     </div>
-    
+
     <footer class="footer container-fluid pl-30 pr-30">
         <!-- start footer -->
-        
+
         <div class="row">
             <!-- start row -->
-            
+
             <div class="col-sm-12">
                 <!-- start col -->
-                
+
                 <p>2017 &copy; SalmaMarket</p>
-                
+
                 <!-- end col -->
             </div>
-            
+
             <!-- end row -->
         </div>
-        
+
         <!-- end footer -->
     </footer>
-    
+
     <!-- end page-wrapper / Main Content -->
 </div>
