@@ -1,0 +1,16 @@
+* folder system merupakan salah satu yang di ignore
+* folder temp merupakan salah satu yang di ignore
+* perhatikan list file yang di ignore
+
+PERHATIAN
+* penamaan di view hindari menggunakan huruf kapital
+* bila ingin ada jarak, gunakan underscore
+* bila ingin menunjukkan bawa file adalah view, jangan lupa menambahkan _view
+* bila ingin menunjukkan model, gunakan _model
+* untuk admin_forex ini tidak menggunakan mysql kecuali untuk session
+* untuk index.php tambahkan date_default ke Jakarta
+* disarankan memakai netbean
+* setidaknya berikan komen yang membantu trace
+=======
+Devel ini berisi admin panel
+0
