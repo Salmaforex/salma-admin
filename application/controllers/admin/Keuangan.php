@@ -5,8 +5,14 @@ class Keuangan extends CI_Controller
     public function __construct() {
         parent::__construct();
         $this->session_page = $this->session->userdata("u_email");
+        $this->load->model('proses/keuangan_m','keuangan', TRUE);
+        /***
+         * Model tables itu untuk nama table.. 
+         * seharusnya tidak ada fungsi tambahan di dalamnya
         $this->load->model('tables/tarif_table', 'tarif_tables', 'TRUE');
         $this->load->model('tables/currency_table', 'currency_tables', 'TRUE');
+         * 
+         */
     }
 
     public function index() {
@@ -16,17 +22,19 @@ class Keuangan extends CI_Controller
     public function currency($page = "", $id = NULL) {
         // Session
         $data["name"] = $this->session_page;
+        $data["currency_id"]=$id;
 
         // Title
         $data["sub_title"] = "List Currency";
         $data["sub_title2"] = "Form Input";
         $data["title"] = "SalmaMarket | Currency";
         $data["breadcrumb_title_input"] = "List Currency";
-
+/****
+ * TIDAK PERLU DILAKUKAN DISINI. DATA JALANKAN DI VIEW
         // Menampilkan data
         $data["all_currency"] = $this->currency_tables->show_all_data();
         $data["one_currency"] = $this->currency_tables->show_one_data($id);
-
+*/
         if (!isset($data["content"])) {
             $data["content"] = "currency";
         }
@@ -40,27 +48,35 @@ class Keuangan extends CI_Controller
         $this->load->view("admin/Main_v", $data);
     }
 
-    public function currency_input() {
+    public function currency_input($id) {
         $code = $this->input->post("code");
         $name = $this->input->post('name');
         $symbol = $this->input->post('symbol');
 
         $input_array = array(
+            'id'=>$id,
             'code' => $code,
             'name' => $name,
             'symbol' => $symbol
         );
-        $sql = $this->currency_tables->insert_data($input_array);
+        
+        $sql = $this->keuangan->currency_add($input_array);
+        //echo_r($sql,TRUE);die('stop');
         if ($sql) {
-            $this->session->set_flashdata('success', "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data berhasil disimpan. Terima kasih.</div>");
+            $this->session->set_flashdata('success', 
+                    "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data berhasil disimpan. Terima kasih.</div>");
             redirect(site_url('admin/keuangan'));
         } else {
-            $this->session->set_flashdata('success', "<div class='alert alert-warning' role='alert'><span class='glyphicon glyphicon-alert'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data gagal disimpan. Silahkan mencoba kembali. Terima kasih.</div>");
+            $this->session->set_flashdata('success', 
+                    "<div class='alert alert-warning' role='alert'><span class='glyphicon glyphicon-alert'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data gagal disimpan. Silahkan mencoba kembali. Terima kasih.</div>");
             redirect(site_url('admin/keuangan'));
         }
     }
 
-    public function currency_ubah() {
+    public function currency_ubah($id) {
+        $this->currency_input($id);
+        exit;
+    /*    
         $id = $this->input->post("id");
         $code = $this->input->post("code");
         $name = $this->input->post('name');
@@ -74,28 +90,46 @@ class Keuangan extends CI_Controller
         );
         $sql = $this->currency_tables->update_Data($ubah_array);
         if ($sql) {
-            $this->session->set_flashdata('success', "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data berhasil diubah. Terima kasih.</div>");
+            $this->session->set_flashdata('success', 
+                    "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data berhasil diubah. Terima kasih.</div>");
             redirect(site_url('admin/keuangan'));
         } else {
-            $this->session->set_flashdata('success', "<div class='alert alert-warning' role='alert'><span class='glyphicon glyphicon-alert'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data gagal disimpan. Silahkan mencoba kembali. Terima kasih.</div>");
+            $this->session->set_flashdata('success', 
+                    "<div class='alert alert-warning' role='alert'><span class='glyphicon glyphicon-alert'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data gagal disimpan. Silahkan mencoba kembali. Terima kasih.</div>");
             redirect(site_url('admin/keuangan'));
         }
+     * 
+     */
     }
 
     public function currency_approve($id)
     {
-        $sql = $this->currency_tables->approve_data($id);
+        //$sql = $this->currency_tables->approve_data($id);
+        $input_array = array(
+            'id'=>$id,
+            'approved' => 1
+        );
+        
+        $sql = $this->keuangan->currency_add($input_array);
         if ($sql) {
-            $this->session->set_flashdata('approve_success', "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Approve berhasil dilakukan. Terima kasih.</div>");
+            $this->session->set_flashdata('approve_success', 
+                    "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Approve berhasil dilakukan. Terima kasih.</div>");
             redirect(site_url('admin/keuangan'));
         }
     }
 
     public function currency_disapprove($id)
     {
-        $sql = $this->currency_tables->disapprove_data($id);
+       // $sql = $this->currency_tables->disapprove_data($id);
+        $input_array = array(
+            'id'=>$id,
+            'approved' => 0
+        );
+        
+        $sql = $this->keuangan->currency_add($input_array);
         if ($sql) {
-            $this->session->set_flashdata('disapprove_success', "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Disapprove berhasil dilakukan. Terima kasih.</div>");
+            $this->session->set_flashdata('disapprove_success', 
+                    "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Disapprove berhasil dilakukan. Terima kasih.</div>");
             redirect(site_url('admin/keuangan'));
         }
     }

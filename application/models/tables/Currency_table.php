@@ -1,6 +1,9 @@
 <?php
 class Currency_table extends CI_Model
 {
+    private $db_main;
+    public $table = 'mujur_currency';
+    
     public function __construct() {
         parent::__construct();
     }

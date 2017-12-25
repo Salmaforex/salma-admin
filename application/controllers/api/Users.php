@@ -8,116 +8,119 @@ class Users extends REST_Controller {
 
     function __construct() {
         parent::__construct();
-    //    $this->load->helper('api');
-    //    $this->load->database();
+        //    $this->load->helper('api');
+        //    $this->load->database();
         $this->load->model('salma/users_model');
         //$this->load->library('session');
         header('Access-Control-Allow-Origin: *');
         //logCreate('rest user : server'.print_r($_SERVER,1));
     }
-/*----------*/
-    function detail_post(){
-        $param    = $this->post()  ;
-        $respon['raw']=array($param) ;
-        $respon['err_code']=FALSE; //wajib ada
-        $respon['message']=NULL; //wajib ada
-        
+
+    /* ---------- */
+
+    function detail_post() {
+        $param = $this->post();
+        $respon['raw'] = array($param);
+        $respon['err_code'] = FALSE; //wajib ada
+        $respon['message'] = NULL; //wajib ada
+
         $target = isset($param['email']) ? $param['email'] : FALSE;
-        if($target==FALSE){
-            $respon['exist']=FALSE;
-            $respon['user']=FALSE;
-            $respon['user_detail']=FALSE;
-            $this->response($respon,200);
+        if ($target == FALSE) {
+            $respon['exist'] = FALSE;
+            $respon['user'] = FALSE;
+            $respon['user_detail'] = FALSE;
+            $this->response($respon, 200);
         }
-        
+
         $fields = isset($param['field']) ? $param['field'] : 'u_email';
         $exist = $this->users_model->exist($target, $fields);
-        
-        $filter = array('get_all'=>array($fields, $target));
-        $respon['exist'] = $exist;        
-        $respon['user'] = $exist? $this->users_model->gets($target  ) : FALSE;
-        $respon['user_detail'] = $exist? $this->users_model->getDetail($target,TRUE ) : FALSE;
-        
+
+        $filter = array('get_all' => array($fields, $target));
+        $respon['exist'] = $exist;
+        $respon['user'] = $exist ? $this->users_model->gets($target) : FALSE;
+        $respon['user_detail'] = $exist ? $this->users_model->getDetail($target, TRUE) : FALSE;
+
         unset($respon['raw']);
-        $this->response($respon,200);
+        $this->response($respon, 200);
     }
-    
-    function exist_post(){
-        $param    = $this->post()  ;
-        $respon['raw']=array($param) ;
-        $respon['err_code']=FALSE; //wajib ada
-        $respon['message']=NULL; //wajib ada
+
+    function exist_post() {
+        $param = $this->post();
+        $respon['raw'] = array($param);
+        $respon['err_code'] = FALSE; //wajib ada
+        $respon['message'] = NULL; //wajib ada
         $target = isset($param['email']) ? $param['email'] : '';
         $fields = isset($param['field']) ? $param['field'] : 'u_email';
-        if($target==FALSE){
-            $respon['exist']=FALSE;
-            $respon['user']=FALSE;
-            $this->response($respon,200);
+        if ($target == FALSE) {
+            $respon['exist'] = FALSE;
+            $respon['user'] = FALSE;
+            $this->response($respon, 200);
         }
-        
+
         $exist = $this->users_model->exist($target, $fields);
-        
-        $filter = array('get_all'=>array($fields, $target));
-        $respon['exist'] = $exist;        
-        $respon['users'] = $exist? $this->users_model->get_data($filter,30 ): FALSE;
-        
+
+        $filter = array('get_all' => array($fields, $target));
+        $respon['exist'] = $exist;
+        $respon['users'] = $exist ? $this->users_model->get_data($filter, 30) : FALSE;
+
         unset($respon['raw']);
-        $this->response($respon,200);
+        $this->response($respon, 200);
     }
-    
-    function login_post(){
-        $param    = $this->post()  ;
-        $respon=array(
-            'login'=>FALSE,
-            'err_code'=>NULL,
-            'message'=>NULL,
-            'user'=>FALSE,
-            'user_detail'=>FALSE
+
+    function login_post() {
+        $param = $this->post();
+        $respon = array(
+            'login' => FALSE,
+            'err_code' => NULL,
+            'message' => NULL,
+            'user' => FALSE,
+            'user_detail' => FALSE
         );
-        
-        $respon['raw']=array($param) ;
-        $respon['err_code']=FALSE; //wajib ada
-        $respon['message']=NULL; //wajib ada
+
+        $respon['raw'] = array($param);
+        $respon['err_code'] = FALSE; //wajib ada
+        $respon['message'] = NULL; //wajib ada
         $username = isset($param['email']) ? $param['email'] : '';
         $password = isset($param['password']) ? $param['password'] : 'u_email';
-        
+
         $exist = $this->users_model->exist($username);
-        if(!$exist){
-            $respon['err_code']=1;
-            $respon['message']='Username not exist';
+        if (!$exist) {
+            $respon['err_code'] = 1;
+            $respon['message'] = 'Username not exist';
             unset($respon['raw']);
-            $this->response($respon,200);
+            $this->response($respon, 200);
         }
-        
-		log_add('check login start');
+
+        log_add('check login start');
         $status = $this->users_model->check_login($username, $password);
-        $respon['login']=$status;
+        $respon['login'] = $status;
         log_add('check login end');
-        $check_login = $respon['raw'][]=$this->users_model->check_login_old($username, $password);
-        if($check_login){
-            $this->users_model->update_password($username,$password);
+        $check_login = $respon['raw'][] = $this->users_model->check_login_old($username, $password);
+        if ($check_login) {
+            $this->users_model->update_password($username, $password);
         }
-        
-        if($status){
+
+        if ($status) {
             unset($respon['raw']);
-            $respon['user']=$this->users_model->gets($username );
-            $respon['user_detail'] = $exist? $this->users_model->getDetail($username,TRUE ): FALSE;
-            $this->response($respon,200);
+            $respon['user'] = $this->users_model->gets($username);
+            $respon['user_detail'] = $exist ? $this->users_model->getDetail($username, TRUE) : FALSE;
+            $this->response($respon, 200);
         }
-        
-        $respon['err_code']=2;
-        $respon['message']='Username or password not match';
-              
-        
-        $respon['raw']['old']=$this->users_model->check_login_old($username, $password);
-        $respon['raw']['new']=$this->users_model->check_login_new($username, $password);
-        $respon['raw'][]= $this->users_model->gets($username );
+
+        $respon['err_code'] = 2;
+        $respon['message'] = 'Username or password not match';
+
+
+        $respon['raw']['old'] = $this->users_model->check_login_old($username, $password);
+        $respon['raw']['new'] = $this->users_model->check_login_new($username, $password);
+        $respon['raw'][] = $this->users_model->gets($username);
         unset($respon['raw']);
-        
-        $this->response($respon,200);
+
+        $this->response($respon, 200);
     }
-	
-/*----------*/
+
+    /* ---------- */
+
     function index_post($params = false) {
         $post = $param = $params == false ? $this->post() : $params;
         logCreate('rest user post ' . json_encode($post));

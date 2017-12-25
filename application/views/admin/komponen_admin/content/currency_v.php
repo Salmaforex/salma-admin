@@ -20,16 +20,16 @@
                     <div class="panel-heading">
                         <!-- start panel-heading -->
 
-						<div class="pull-left">
+                        <div class="pull-left">
                             <!-- start pull-left -->
 
                             <div class="col-lg-12 col-md-12 col-sm-12">
                                 <!-- start col -->
 
-        					    <!-- <h5 class="txt-dark"><?php echo $form_title; ?></h5> -->
+                                                    <!-- <h5 class="txt-dark"><?php echo $form_title; ?></h5> -->
 
                                 <!-- end col -->
-        					</div>
+                            </div>
 
                             <!-- end pull-left -->
                         </div>
@@ -38,8 +38,8 @@
 
                             <ol class="breadcrumb">
                                 <li><a href="index.html">Dashboard</a></li>
-                                <li><a href="#"><span>Keuangan</span></a></li>
-                                <li class="active"><span><?= $breadcrumb_title_input; ?></span></li>
+                                <li><a href="#"><span></span>Keuangan</a></li>
+                                <li class="active"><span></span><?= $breadcrumb_title_input; ?></li>
                             </ol>
 
                             <!-- end col -->
@@ -51,21 +51,25 @@
                     <div class="panel-wrapper collapse in">
                         <!-- start panel-wrapper -->
 
-						<div class="panel-body">
+                        <div class="panel-body">
                             <!-- start panel-body -->
 
-							<div class="pills-struct mt-40">
+                            <div class="pills-struct mt-40">
                                 <!-- start pill-struct -->
 
-								<ul role="tablist" class="nav nav-pills" id="myTabs_6">
-									<li class="active" role="presentation"><a aria-expanded="true" data-toggle="tab" role="tab" id="home_tab_6" href="#home_6"><?= $sub_title; ?></a></li>
-									<li role="presentation" class=""><a data-toggle="tab" id="profile_tab_6" role="tab" href="#profile_6" aria-expanded="false"><?= $sub_title2; ?></a></li>
-								</ul>
-								<div class="tab-content" id="myTabContent_6">
+                                <ul role="tablist" class="nav nav-pills" id="myTabs_6">
+                                    <li class="active" role="presentation">
+                                        <a aria-expanded="true" data-toggle="tab" role="tab" id="home_tab_6" href="#home_6">
+                                            <?= $sub_title; ?></a></li>
+                                    <li role="presentation" class="">
+                                        <a data-toggle="tab" id="profile_tab_6" role="tab" href="#profile_6" aria-expanded="false">
+                                            <?= $sub_title2; ?></a></li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent_6">
                                     <!-- start tab-content -->
 
-									<div  id="home_6" class="tab-pane fade active in" role="tabpanel">
-										<!-- start home_6 -->
+                                    <div  id="home_6" class="tab-pane fade active in" role="tabpanel">
+                                        <!-- start home_6 -->
 
                                         <div class="panel panel-default">
                                             <!-- start panel -->
@@ -75,46 +79,9 @@
 
                                                 <div class="panel-body">
                                                     <!-- start panel-body -->
-
-                                                    <div class="table-responsive">
-                                                        <!-- start table-responsive -->
-
-                                                        <table id="datable_1" class="table table-hover display  pb-30" >
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Code</th>
-                                                                    <th>Name</th>
-                                                                    <th>Symbol</th>
-                                                                    <th>Status</th>
-                                                                    <th>Created</th>
-                                                                    <th>Aksi</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <?php
-                                                                    foreach ($all_currency as $key => $value) {
-                                                                ?>
-                                                                    <tr>
-                                                                        <td><?php echo $value["code"]; ?></td>
-                                                                        <td><?php echo $value["name"]; ?></td>
-                                                                        <td><?php echo $value["symbol"]; ?></td>
-                                                                        <td><?php if ($value["approved"] == 1) { echo "Disetujui"; } else { echo "Tidak disetujui"; } ?></td>
-                                                                        <td><?php echo $value["created"]; ?></td>
-                                                                        <td>
-                                                                            <a href="<?php echo site_url('admin/keuangan/currency/edit/'.$value['id']); ?>" role="button" class="btn btn-xs btn-primary">Ubah</a>
-                                                                            <a href="<?php echo site_url('admin/keuangan/currency_approve/'.$value['id']); ?>" role="button" id="btn-approve" class="btn btn-xs btn-success">Approve</a>
-                                                                            <a href="<?php echo site_url('admin/keuangan/currency_disapprove/'.$value['id']); ?>" role="button" class="btn btn-xs btn-warning">Disapprove</a>
-                                                                        </td>
-                                                                    </tr>
-                                                                <?php
-                                                                    }
-                                                                ?>
-                                                            </tbody>
-                                                        </table>
-
-                                                        <!-- end table-responsive -->
-                                                    </div>
-
+                                                    <?php
+                                                    $this->load->view('admin/datatables/currency_tables');
+                                                    ?>
                                                     <!-- end panel-body -->
                                                 </div>
 
@@ -125,8 +92,9 @@
                                         </div>
 
                                         <!-- end home_6 -->
-									</div>
-									<div  id="profile_6" class="tab-pane fade" role="tabpanel">
+                                    </div>
+
+                                    <div  id="profile_6" class="tab-pane fade" role="tabpanel">
                                         <!-- start form_input_currency -->
 
                                         <div class="row">
@@ -135,98 +103,36 @@
                                             <div class="col-sm-12 col-md-12">
                                                 <!-- start col -->
 
-							                    <div class="panel panel-default card-view">
-                                                    <!-- start panel -->
-
-                                                    <div class="panel-wrapper collapse in">
-                                                        <!-- start panel-wrapper -->
-
-									                    <div class="panel-body">
-                                                            <!-- start panel-body -->
-
-										                    <div class="row">
-                                                                <!-- start row -->
-
-											                    <div class="col-sm-12 col-md-6 col-md-offset-4">
-                                                                    <!-- start col -->
-
-												                    <div class="form-wrap">
-                                                                        <!-- start form-warp -->
-
-													                    <form method="post" action="<?= site_url('admin/keuangan/currency_input'); ?>">
-                    														<div class="form-group">
-                    															<label class="control-label mb-10" for="code">Code</label>
-                    															<div class="input-group col-sm-2">
-                    																<div class="input-group-addon"><i class="icon-user"></i></div>
-                    																<input type="text" name="code" class="form-control" id="code" />
-                    															</div>
-                    														</div>
-                    														<div class="form-group">
-                    															<label class="control-label mb-10" for="name">Name</label>
-                    															<div class="input-group col-sm-6">
-                    																<div class="input-group-addon"><i class="icon-envelope-open"></i></div>
-                    																<input type="text" name="name" class="form-control" id="name" />
-                    															</div>
-                    														</div>
-                    														<div class="form-group">
-                    															<label class="control-label mb-10" for="symbol">Symbol</label>
-                    															<div class="input-group col-sm-2">
-                    																<div class="input-group-addon"><i class="icon-lock"></i></div>
-                    																<input type="text" name="symbol" class="form-control" id="symbol" />
-                    															</div>
-                    														</div>
-
-                    														<button type="submit" class="btn btn-success mr-10">Save</button>
-                    														<button type="submit" class="btn btn-default">Cancel</button>
-                    													</form>
-
-                                                                        <!-- end form-warp -->
-                    												</div>
-
-                                                                    <!-- end col -->
-                    											</div>
-
-                                                                <!-- end row -->
-                    										</div>
-
-                                                            <!-- end panel-body -->
-                    									</div>
-
-                                                        <!-- end panel-wrapper -->
-                    								</div>
-
-                                                    <!-- end panel -->
-                    							</div>
+                                                <?php $this->load->view('admin/forms/currency_form'); ?>
 
                                                 <!-- end col -->
-                    						</div>
+                                            </div>
 
                                             <!-- end row -->
                                         </div>
 
                                         <!-- end form_input_currency -->
-									</div>
-
+                                    </div>
                                     <!-- end tab-content -->
-								</div>
+                                </div>
 
                                 <!-- end pill-struct -->
-							</div>
+                            </div>
 
                             <!-- end panel-body -->
-						</div>
+                        </div>
 
                         <!-- end panel-wrapper -->
-					</div>
+                    </div>
 
                     <!-- end panel -->
-				</div>
+                </div>
 
                 <!-- end col -->
-			</div>
+            </div>
 
             <!-- end row -->
-		</div>
+        </div>
 
         <!-- end container-fluid -->
     </div>
