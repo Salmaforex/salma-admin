@@ -25,6 +25,9 @@ tmp/*
 
 application/config.php
 application/database.php
+*/application/config.php
+*/application/database.php
+
 application/cache/*
 !application/cache/index.html
 
