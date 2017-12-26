@@ -10,6 +10,7 @@ user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 
+
 #codeigniter 3
 application/logs/*
 !application/logs/index.html
@@ -20,6 +21,7 @@ application/logs/*
 */tmp/*
 user_guide/*
 
+*/z_update.sh
 
 tmp/*
 
