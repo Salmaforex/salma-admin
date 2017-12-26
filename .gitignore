@@ -23,10 +23,10 @@ user_guide/*
 
 tmp/*
 
-application/config.php
-application/database.php
-*/application/config.php
-*/application/database.php
+application/config/config.php
+application/config/database.php
+*/application/config/config.php
+*/application/config/database.php
 
 application/cache/*
 !application/cache/index.html
