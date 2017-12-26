@@ -28,7 +28,6 @@ application/database.php
 application/cache/*
 !application/cache/index.html
 
-
 !application/*/.htaccess
 
 composer.lock
