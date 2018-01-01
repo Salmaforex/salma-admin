@@ -13,7 +13,7 @@
  "use strict"; 
 /*****Ready function start*****/
 $(document).ready(function(){
-	//philbert();
+	philbert();
 	var $preloader = $(".preloader-it > .la-anim-1");
 	$preloader.addClass('la-animate');
 });

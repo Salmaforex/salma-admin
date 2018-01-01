@@ -24,11 +24,14 @@
         <link href="<?php echo base_url('assets/dist/css/style.css'); ?>" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <!-- start body -->
-
-        <?php $this->load->view("admin/komponen_admin/header.php"); ?>
-
-        <?php $this->load->view("admin/komponen_admin/leftside.php"); ?>
+        	<!-- Preloader -->
+	<div class="preloader-it">
+		<div class="la-anim-1"></div>
+	</div>
+	<!-- /Preloader -->
+        <div class="wrapper theme-1-active pimary-color-green slide-nav-toggle">
+            <?php $this->load->view("admin/komponen_admin/header.php"); ?>
+            <?php $this->load->view("admin/komponen_admin/leftside.php"); ?>
 
         <?php $this->load->view("admin/komponen_admin/rightside.php"); ?>
 
@@ -39,6 +42,13 @@
                 $this->load->view("admin/komponen_admin/maincontent.php");
             }
         ?>
+        </div>
+        
+        <!-- start body -->
+
+        
+
+        
 
         <?php $this->load->view("admin/komponen_admin/footer.php"); ?>
 
