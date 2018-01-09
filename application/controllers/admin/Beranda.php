@@ -8,6 +8,7 @@ class Beranda extends CI_Controller
 
 	public function index()
 	{
+		redirect('super_admin/beranda');
 		$data["title"] = "SalmaMarket | Beranda";
 		$data["name"] = $this->session->userdata("u_email");
 		$data["type"] = $this->session->userdata("u_type");

@@ -1,9 +1,7 @@
 <?php
-class Currency_table extends CI_Model
-{
-    private $db_main;
-    public $table = 'mujur_currency';
-    
+
+class Currency_table extends CI_Model {
+
     public function __construct() {
         parent::__construct();
     }
@@ -69,4 +67,5 @@ class Currency_table extends CI_Model
         $this->db->set("approved", 0);
         return $this->db->update("mujur_currency");
     }
+
 }
