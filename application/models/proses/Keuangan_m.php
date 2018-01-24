@@ -2,8 +2,6 @@
 
 class Keuangan_m extends CI_Model {
 
-    private $list_api;
-
     public function __construct() {
         parent::__construct();
         $this->load->helper('basic_helper');
@@ -11,15 +9,13 @@ class Keuangan_m extends CI_Model {
     }
 
     public function api_process($email, $password) {
-        $url = config_load('api_url', 'site') . 'users/login'; //cari di folder config/site.php 
-        //$this->list_api['url'];
+        $url = config_load('api_url', 'site') . 'users/login'; //cari di folder config/site.php
         $param = array('email' => $email, 'password' => $password);
         return _runApi_old($url, $param, FALSE);
     }
     
-    public function currency_all($filter=NULL,$limit=10,$start=0,$count=FALSE){
-        $url = api_url() . 'settings/currency'; //cari di folder config/site.php 
-        //$this->list_api['url'];
+    public function currency_all(){
+        $url = api_url() . 'settings/currency'; //cari di folder config/site.php
         $param = array('function'=>'get_all');
         $param['params']=array(
             'filter'=>$filter,
@@ -32,10 +28,10 @@ class Keuangan_m extends CI_Model {
     }
     
     function currency_add($input){
-        $url = api_url() . 'settings/currency_add'; //cari di folder config/site.php 
+        $url = api_url() . 'settings/currency_add_post'; //cari di folder config/site.php 
         //$this->list_api['url'];
         $param = array('function'=>'get_all','input'=>$input);
-        echo $url;
+        // echo $url;
         $result= _runApi($url, $param, TRUE);
  
         return $result;

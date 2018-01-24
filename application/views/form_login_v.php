@@ -4,10 +4,12 @@
     <section class="login_content">
         <!-- start login_content -->
         
+        <?= $this->session->flashdata('error_message'); ?>
+
         <div align="center"><img src="<?php echo base_url('assets/images/1488292140salmamarket.png'); ?>" class="img-responsive" /></div>
         <form action="<?php echo site_url('login/proses'); ?>" method="POST">
-            <div><input type="text" id="email" class="form-control" placeholder="Email" /></div>
-            <div><input type="password" id="password" class="form-control" placeholder="Password" /></div>
+            <div><input type="text" name="email" class="form-control" placeholder="Email" /></div>
+            <div><input type="password" name="password" class="form-control" placeholder="Password" /></div>
             <div>
                 <button type="submit" class="btn btn-lg btn-block btn-primary">LOGIN</button>
                 Forget Password? Click <a href="#">reset password!</a>

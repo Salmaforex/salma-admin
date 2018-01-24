@@ -21,7 +21,7 @@ function log_add($text = '') {
 function logConfig() {
     return TRUE;
 }
-
+ 
 function api_url(){
      $api_url=config_load('api_url', 'site');
      return $api_url!=''?$api_url:base_url()."index.php/api/";

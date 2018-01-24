@@ -6,6 +6,7 @@ class Notification extends CI_Controller {
     
     public function __construct() {
         parent::__construct();
+        $this->load->model("proses/M_notif", "notif", TRUE);
         $this->session_page = $this->session->userdata("u_email");
     }
     
@@ -14,7 +15,6 @@ class Notification extends CI_Controller {
     }
     
     /* ===== TIPS & TRICK ===== */
-    
     public function tips_trick($page = "", $id = NULL) {
         // Session
         $data["name"] = $this->session_page;
@@ -36,9 +36,24 @@ class Notification extends CI_Controller {
         // Menampilkan halaman web
         $this->load->view("super_admin/main_v", $data);
     }
+
+    public function tips_trick_input() {
+        $title = $this->input->post("title");
+        $detail = $this->input->post("detail");
+
+        $sql = $this->notif->tips_trick_new($title, $detail);
+        print_r($sql["code"]);
+        // print_r($sql);
+        // echo "<pre>";
+        // print_r($sql);
+        // echo "</pre>";
+        // if ($sql) {
+        //     $this->session->set_flashdata('success_input', "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data berhasil disimpan. Terima kasih.</div>");
+        //     redirect(site_url('super_admin/notification/tips_trick'));
+        // }
+    }
     
     /* ===== NEWS ===== */
-    
     public function news($page = "", $id = NULL) {
         // Session
         $data["name"] = $this->session_page;
@@ -60,5 +75,4 @@ class Notification extends CI_Controller {
         // Menampilkan halaman web
         $this->load->view("super_admin/main_v", $data);
     }
-    
 }

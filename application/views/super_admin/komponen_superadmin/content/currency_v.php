@@ -1,3 +1,8 @@
+<?php
+    $CI =& get_instance();
+    $CI->load->model('keuangan_m');
+    $settings = $CI->keuangan_m->currency_all();
+?>
 <!-- page content -->
 <div class="right_col" role="main">
     <!-- start right_col -->
@@ -41,8 +46,8 @@
                         <!-- start div -->
 
                         <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true"><?= $title_tab1 ?></a></li>
-                            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false"><?= $title_tab2 ?></a></li>
+                            <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true"><?= $sub_title ?></a></li>
+                            <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false"><?= $sub_title2 ?></a></li>
                         </ul>
                         <div id="myTabContent" class="tab-content">
                             <!-- start myTabContent -->
@@ -62,7 +67,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php foreach ($all_currency as $key => $value) { ?>
+                                        <?php foreach ($settings as $key => $value) { ?>
                                             <tr>
                                                 <td><?php echo $value["code"]; ?></td>
                                                 <td><?php echo $value["name"]; ?></td>
@@ -84,7 +89,7 @@
                             <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
                                 <!-- start tab-pane -->
 
-                                <form method="post" action="<?php echo site_url('super_admin/sistem/currency_input'); ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                                <form method="post" action="<?php echo site_url('super_admin/system/currency_input'); ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                                     <div class="form-group">
                                         <label for="code" class="control-label col-md-3 col-sm-3 col-xs-12">Code <span class="required">*</span></label>
                                         <div class="col-md-1 col-sm-12">
@@ -135,3 +140,8 @@
 
     <!-- end right_col -->
 </div>
+<?php
+    echo "<pre>";
+    print_r($settings);
+    echo "</pre>";
+?>

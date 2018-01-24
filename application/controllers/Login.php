@@ -19,8 +19,9 @@ class Login extends CI_Controller {
     	$email = $this->input->post("email");
     	$password = $this->input->post("password");
 
-    	$result = $this->login_m->api_process($email, $password);
-    	if($result["login"]){
+		$result = $this->login_m->api_process($email, $password);
+		print_r($result);
+    	if($result["code"] == 200){
     		$this->session->set_userdata("u_email", $result["user"]["email"]);
     		redirect('admin/beranda');
     		// echo 'berhasil login';
@@ -28,7 +29,7 @@ class Login extends CI_Controller {
     		// print_r($a);
     	}
     	else{
-    		$this->session->set_flashdata("error_message", "<div class='alert alert-warning' role='alert' style='max-width: 500px; margin: auto;'><span class='glyphicon glyphicon-alert'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> ".$result['message']." </div>");
+    		$this->session->set_flashdata("error_message", "<div class='alert alert-warning' role='alert' style='max-width: 500px; margin: auto;'><span class='glyphicon glyphicon-alert'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Email atau Password salah. Silahkan mencoba kembali! </div>");
            	redirect(base_url());
     	}
 

@@ -1,3 +1,9 @@
+<?php
+    $CI =& get_instance();
+    $CI->load->model('proses/m_notif');
+    $tips_trick = $CI->m_notif->tips_trick_all();
+?>
+
 <!-- page content -->
 <div class="right_col" role="main">
     <!-- start right_col -->
@@ -50,14 +56,56 @@
                             <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
                                 <!-- start tab-pane -->
 
-                                Ini Tab 1
+                                <table id="datatable" class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Detail</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach ($tips_trick as $key => $value) { ?>
+                                            <tr>
+                                                <td><?php echo $value["title"]; ?></td>
+                                                <td><?php echo $value["detail"]; ?></td>
+                                                <td></td>
+                                            </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
+                                <?php
+                                    echo "<pre>";
+                                    print_r($tips_trick);
+                                    echo "</pre>";
+                                ?>
 
                                 <!-- end tab-pane -->
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
                                 <!-- start tab-pane -->
 
-                                Ini Tab 2
+                                <form method="post" action="<?php echo site_url('super_admin/notification/tips_trick_input'); ?>" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                                    <div class="form-group">
+                                        <label for="title" class="control-label col-md-3 col-sm-3 col-xs-12">Title <span class="required">*</span></label>
+                                        <div class="col-md-3 col-sm-12">
+                                            <input type="text" name="title" id="title" required="required" class="form-control col-md-7 col-xs-12" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="detail" class="control-label col-md-3 col-sm-3 col-xs-12">Detail <span class="required">*</span></label>
+                                        <div class="col-md-4 col-sm-12">
+                                            <textarea name="detail" id="detail" required="required" class="form-control col-md-7 col-xs-12" cols="8" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="ln_solid"></div>
+                                    <div class="form-group">
+                                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                            <button class="btn btn-primary" type="reset">Reset</button>
+                                            <button type="submit" class="btn btn-success">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
 
                                 <!-- end tab-pane -->
                             </div>
