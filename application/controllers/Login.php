@@ -6,15 +6,12 @@ class Login extends CI_Controller {
     }
     
     public function index() {
-		
-        $data["title"] = "SalmaMarket | Login";
-        $data["content"] = "form_login";
+		$data["title"] = "SalmaMarket | Login";
         
-        $this->load->view('main_v', $data);
+        $this->load->view('login_v', $data);
     }
 	
-	    public function proses()
-    {
+	public function proses() {
     	$this->load->model("proses/login_m");
     	$email = $this->input->post("email");
     	$password = $this->input->post("password");
@@ -27,13 +24,9 @@ class Login extends CI_Controller {
     		// echo 'berhasil login';
     		// return TRUE;
     		// print_r($a);
-    	}
-    	else{
+    	} else{
     		$this->session->set_flashdata("error_message", "<div class='alert alert-warning' role='alert' style='max-width: 500px; margin: auto;'><span class='glyphicon glyphicon-alert'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Email atau Password salah. Silahkan mencoba kembali! </div>");
            	redirect(base_url());
     	}
-
     }
-
 }
-

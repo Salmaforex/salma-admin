@@ -45,7 +45,7 @@ class Keuangan extends CI_Controller
         }
 
         // Menampilkan halaman web
-        $this->load->view("admin/Main_v", $data);
+        $this->load->view("super_admin/main_v", $data);
     }
 
     public function currency_input($id = NULL) {

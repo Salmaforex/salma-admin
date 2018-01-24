@@ -43,8 +43,8 @@ if (!function_exists('_runApi_old')) {
         if (count($parameter)) {
             $logTxt = "func:_runApi| url:{$url}| param:" . http_build_query($parameter, '', '&');
         } else {
-            $logTxt = "func:_runApi| url:{$url}";
-            $parameter['info'] = 'no post';
+            $logTxt = "func:_runApi| url:{$url}";//$parameter['info'] = 'no post';
+            $parameter='';
         }
         //$parameter[]=array('server'=>$_SERVER);
         $dtAPI['parameter'] = json_encode($parameter);
@@ -128,7 +128,7 @@ if (!function_exists('_runApi')) {
             $logTxt = "func:_runApi| url:{$url}| param:" . http_build_query($parameter, '', '&');
         } else {
             $logTxt = "func:_runApi| url:{$url}";
-            $parameter['info'] = 'no post';
+           $parameter='';// $parameter['info'] = 'no post';
         }
         //$parameter[]=array('server'=>$_SERVER);
         $dtAPI['parameter'] = json_encode($parameter);

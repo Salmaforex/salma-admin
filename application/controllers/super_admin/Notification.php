@@ -27,8 +27,13 @@ class Notification extends CI_Controller {
         $data["breadcrumb_title_input"] = "N/A";
         
         // Menampilkan data
+        if ($page == "edit") {
+            $data["tips_id"] = $id;
+            $data["detail_title_nav"] = "Detail Data";
+            $data["content"] = "detail_tipstrick";
+        }
         
-        // menampilkan konten
+        // Menampilkan konten
         if (!isset($data["content"])) {
             $data["content"] = "tips_trick";
         }
@@ -42,15 +47,37 @@ class Notification extends CI_Controller {
         $detail = $this->input->post("detail");
 
         $sql = $this->notif->tips_trick_new($title, $detail);
-        print_r($sql["code"]);
-        // print_r($sql);
-        // echo "<pre>";
-        // print_r($sql);
-        // echo "</pre>";
-        // if ($sql) {
-        //     $this->session->set_flashdata('success_input', "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data berhasil disimpan. Terima kasih.</div>");
-        //     redirect(site_url('super_admin/notification/tips_trick'));
-        // }
+        if ($sql) {
+            $this->session->set_flashdata('success_input', "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data berhasil disimpan. Terima kasih.</div>");
+            redirect(site_url('super_admin/notification/tips_trick'));
+        } else {
+            $this->session->set_flashdata('warning_input', "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data gagal disimpan. Silahkan mencoba kembali! Terima kasih</div>");
+            redirect(site_url('super_admin/notification/tips_trick'));
+        }
+    }
+
+    public function tips_trick_ubah() {
+        $id = $this->input->post("id");
+        $title = $this->input->post("title");
+        $detail = $this->input->post("detail");
+
+        $sql = $this->notif->tips_trick_update($id, $title, $detail);
+        if ($sql) {
+            $this->session->set_flashdata('success_ganti', "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data berhasil disimpan. Terima kasih.</div>");
+            redirect(site_url('super_admin/notification/tips_trick/edit/'.$id));
+        } else {
+            $this->session->set_flashdata('warning_ganti', "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data gagal disimpan. Silahkan mencoba kembali! Terima kasih</div>");
+            redirect(site_url('super_admin/notification/tips_trick/edit/'.$id));
+        }
+    }
+
+    public function tips_trick_detail($id) {
+        $data["sub_title"] = "Tips &amp; Trick";
+        $data["detail_title_nav"] = "Detail Data";
+        $data["tips_trick"] = $this->notif->tips_trick_detail($id);
+        $data["content"] = "detail_tipstrick";
+
+        $this->load->view("super_admin/main_v", $data);
     }
     
     /* ===== NEWS ===== */
