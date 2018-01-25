@@ -23,7 +23,7 @@ function logConfig() {
 }
  
 function api_url(){
-     $api_url=config_load('api_url', 'site');
+     $api_url=config_load('api_url', 'sites');
      return $api_url!=''?$api_url:base_url()."index.php/api/";
 
 }

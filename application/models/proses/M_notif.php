@@ -20,10 +20,8 @@ class M_notif extends CI_Model {
 
     public function tips_trick_detail($id) {
         $url = api_url() . "messages/tips_trik?tips_id=".$id; 
-        $result= _runApi($url, $id, TRUE);//,array(),TRUE); //ini GET bukan POST
-        echo "<pre>";
-        print_r($result);
-        echo "</pre>";
+        $result= _runApi($url);//,array(),TRUE); //ini GET bukan POST
+        //print_r($result);
         return isset($result['data']['tips'])?$result['data']['tips']:array();
     }
 
@@ -43,13 +41,14 @@ class M_notif extends CI_Model {
         $url = api_url() . "messages/tips_trik";
         $param = array(
             "show" => 1,
-            "id" => $id,
+            "tips_id" => $id,
             'title' => $title,
             'detail' => $detail,
             'action' => 'update'
         );
        
         $result= _runApi($url, $param, FALSE);
+		//print_r($result);
         return isset($result['data']['tips'])?$result['data']['tips']:FALSE;
     }
 }
