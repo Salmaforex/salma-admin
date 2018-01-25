@@ -68,7 +68,7 @@
                                         <?php foreach ($tips_trick as $key => $value) { ?>
                                             <tr>
                                                 <td><?php echo $value["title"]; ?></td>
-                                                <td><?php echo $value["detail"]; ?></td>
+                                                <td><?php echo substr($value["detail"],0,20); ?></td>
                                                 <td>
                                                     <a href="<?php echo site_url('super_admin/notification/tips_trick/edit/' . $value['id']);  ?>" role="button" class="btn btn-info btn-sm">Edit</a>
                                                 </td>
@@ -77,10 +77,12 @@
                                     </tbody>
                                 </table>
                                 <?php
+								/*
                                     echo "<pre>";
                                     print_r($tips_trick);
                                     echo "</pre>";
-                                ?>
+                                */
+								?>
 
                                 <!-- end tab-pane -->
                             </div>

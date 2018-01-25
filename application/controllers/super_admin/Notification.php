@@ -56,13 +56,14 @@ class Notification extends CI_Controller {
         }
     }
 
-    public function tips_trick_ubah() {
-        $id = $this->input->post("id");
+    public function tips_trick_ubah($id) {
+        //$id = $this->input->post("id");
         $title = $this->input->post("title");
         $detail = $this->input->post("detail");
 
-        $sql = $this->notif->tips_trick_update($id, $title, $detail);
-        if ($sql) {
+        $result = $this->notif->tips_trick_update($id, $title, $detail);
+		//var_dump($result);die;
+        if ($result) {
             $this->session->set_flashdata('success_ganti', "<div class='alert alert-success' role='alert'><span class='glyphicon glyphicon-ok'></span><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button> Data berhasil disimpan. Terima kasih.</div>");
             redirect(site_url('super_admin/notification/tips_trick/edit/'.$id));
         } else {
