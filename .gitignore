@@ -27,7 +27,9 @@ tmp/*
 
 application/config/config.php
 application/config/database.php
+application/config/site.php
 */application/config/config.php
+*/application/config/site.php
 */application/config/database.php
 
 application/cache/*
