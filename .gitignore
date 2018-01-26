@@ -27,7 +27,12 @@ tmp/*
 
 application/config/config.php
 application/config/database.php
+<<<<<<< HEAD
 application/config/site.php
+=======
+application/config/sites.php
+*/application/config/sites.php
+>>>>>>> cbd7e1a8e540948cd9ff3a777853b7b70208ea82
 */application/config/config.php
 */application/config/site.php
 */application/config/database.php
